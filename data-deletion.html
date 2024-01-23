@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .instructions {
+            margin-bottom: 20px;
+        }
+        .delete-button {
+            padding: 10px;
+            background-color: #ff0000;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // This function can be extended to include AJAX requests or other necessary logic
+        function deleteUserData() {
+            // Add your logic for data deletion here
+            console.log("Data deletion initiated. Please wait for confirmation.");
+            alert('Data deletion request sent')
+        }
+    </script>
+</head>
+<body>
+<div class="instructions">
+    <h2>Data Deletion Instructions</h2>
+    <p>
+        Click the button below to initiate the data deletion process.
+        Please note that this action is irreversible, and all your data will be permanently deleted.
+    </p>
+</div>
+
+<button class="delete-button" onclick="deleteUserData()">Delete My Data</button>
+</body>
+</html>
