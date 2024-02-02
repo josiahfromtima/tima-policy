@@ -16,7 +16,7 @@
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '1031921694773241',
+            appId      : '1871358313281038',
             xfbml      : true,
             version    : 'v18.0'
         });
@@ -57,19 +57,17 @@
     }
 </script>
 <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=1031921694773241"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0&appId=1871358313281038"
         nonce="wreDQhen">
 </script>
 <fb:login-button
         config_id="837081364769384"
         onlogin="checkLoginState();">
 </fb:login-button>
-<div id="status"></div>
-<div>
-    <textarea id="token" rows=10 style="width: 400px" disabled></textarea><br />
-</div>
-<br /><br />
-<a href="https://www.facebook.com/v18.0/dialog/oauth?client_id=1031921694773241&redirect_uri=https://tima.agency/&state=d8adfcf4-9d28-4586-95c7-367ae0e75fe2&config_id=837081364769384"
-   style="padding: 1%; background: #3F8DFD; text-decoration: none">Connect...</a>
+<fb:login-button
+        id="login"
+        scope="public_profile,instagram_basic,pages_show_list,instagram_content_publish,pages_read_engagement,instagram_manage_comments,instagram_manage_insights,read_insights,business_management"
+        onlogin="checkLoginState();">
+</fb:login-button>
 </body>
 </html>
